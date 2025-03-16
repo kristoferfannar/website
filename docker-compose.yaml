@@ -6,12 +6,17 @@ services:
     volumes:
       - ./nginx.conf:/etc/nginx/nginx.conf
       - ./:/usr/share/nginx/html
+    networks:
+      - nw
     restart: unless-stopped
 
 
   nextjs-about:
     build: ./nextjs-about/
-    ports: 
-      - "3000:3000"
+    networks:
+      - nw
     restart: unless-stopped
 
+networks:
+  nw:
+    driver: bridge

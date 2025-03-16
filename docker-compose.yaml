@@ -17,6 +17,12 @@ services:
       - nw
     restart: unless-stopped
 
+  templ-projects:
+    build: ./templ-projects/
+    networks:
+      - nw
+    restart: unless-stopped
+
 networks:
   nw:
     driver: bridge

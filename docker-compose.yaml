@@ -4,6 +4,14 @@ services:
     ports:
       - "8080:80"
     volumes:
-      - ./nginx.conf:/etc/nginx/conf.d/default.conf
+      - ./nginx.conf:/etc/nginx/nginx.conf
       - ./:/usr/share/nginx/html
     restart: unless-stopped
+
+
+  nextjs-about:
+    build: ./nextjs-about/
+    ports: 
+      - "3000:3000"
+    restart: unless-stopped
+

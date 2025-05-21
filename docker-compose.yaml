@@ -11,14 +11,14 @@ services:
     restart: unless-stopped
 
 
-  nextjs-about:
-    build: ./nextjs-about/
+  about_server:
+    build: ./about/
     networks:
       - nw
     restart: unless-stopped
 
-  templ-projects:
-    build: ./templ-projects/
+  projects_server:
+    build: ./projects/
     networks:
       - nw
     restart: unless-stopped

@@ -5,11 +5,20 @@ services:
       - "8080:80"
     volumes:
       - ./nginx.conf:/etc/nginx/nginx.conf
-      - ./:/usr/share/nginx/html
     networks:
       - nw
     restart: unless-stopped
+    depends_on:
+      - root_server
+      - about_server
+      - projects_server
 
+  root_server: 
+    build: ./root/
+    networks: 
+      - nw
+    restart: unless-stopped
+    stop_grace_period: 1s
 
   about_server:
     build: ./about/

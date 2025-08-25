@@ -1,0 +1,6 @@
+{
+  "compilerOptions": {
+    "jsx": "react-jsx",          // enables the new JSX transform
+    "jsxImportSource": "react"   // (optional, default is react)
+  }
+}

@@ -1,9 +1,9 @@
 function Footer() {
-    return (
-        <div className="h-20 bg-zinc-800 px-16 flex justify-between items-center">
-            <p>this is a footer</p>
-        </div>
-    );
+	return (
+		<div className="h-20 bg-zinc-800 px-24 flex justify-between items-center text-lg">
+			<p>this is a footer</p>
+		</div>
+	);
 }
 
 export default Footer;

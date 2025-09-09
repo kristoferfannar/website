@@ -8,7 +8,7 @@ if [[ "$USER" != "ec2-user" ]]; then
 fi
 
 # for this script to succeed:
-# - ensure docker (and docker-compose) is installed 
+# - ensure docker (and docker-compose) is installed
 # - ensure nginx is installed
 
 sudo rm -rf /etc/nginx && sudo cp -R ./etc/nginx/ /etc/nginx

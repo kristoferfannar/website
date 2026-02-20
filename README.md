@@ -14,7 +14,7 @@ I'm doing this by combining docker containers and some nginx magic.
 Below is a list of each endpoint and the associated tech stack for that endpoint.
 
 ```
-/           html/css/js
+/           react
 /about      nextjs
 /projects   templ
 ```

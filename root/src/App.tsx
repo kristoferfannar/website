@@ -7,7 +7,7 @@ import conf from "../../nginx.conf?raw";
 SyntaxHighlighter.registerLanguage("nginx", nginx);
 
 function App() {
-	const color = `${atomOneDark["hljs"]["background"]}`;
+	const color = atomOneDark.hljs.background.toString();
 
 	const colors = Object.keys(atomOneDark)
 		.filter((key) => {

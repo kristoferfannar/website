@@ -33,7 +33,7 @@ services:
     restart: unless-stopped
 
   chess_server:
-    build: ../chess/
+    build: ./chess/
     networks:
       - nw
     restart: unless-stopped

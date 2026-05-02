@@ -32,6 +32,12 @@ services:
       - nw
     restart: unless-stopped
 
+  chess_server:
+    build: ../chess/
+    networks:
+      - nw
+    restart: unless-stopped
+
 networks:
   nw:
     driver: bridge

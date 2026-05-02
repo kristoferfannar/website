@@ -1,0 +1,15 @@
+services:
+  about_server:
+    platform: linux/amd64
+
+  chess_server:
+    platform: linux/amd64
+
+  root_server:
+    platform: linux/amd64
+
+  projects_server:
+    platform: linux/amd64
+
+  nginx:
+    platform: linux/amd64

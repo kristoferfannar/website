@@ -15,6 +15,7 @@ services:
 
   root_server: 
     build: ./root/
+    image: dockerkristo/website_root:latest
     networks: 
       - nw
     restart: unless-stopped
@@ -22,18 +23,21 @@ services:
 
   about_server:
     build: ./about/
+    image: dockerkristo/website_about:latest
     networks:
       - nw
     restart: unless-stopped
 
   projects_server:
     build: ./projects/
+    image: dockerkristo/website_projects:latest
     networks:
       - nw
     restart: unless-stopped
 
   chess_server:
     build: ./chess/
+    image: dockerkristo/website_chess:latest
     networks:
       - nw
     restart: unless-stopped

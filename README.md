@@ -17,6 +17,7 @@ Below is a list of each endpoint and the associated tech stack for that endpoint
 /           react
 /about      nextjs
 /projects   templ
+/chess      nextjs
 ```
 
 ## Development
@@ -41,3 +42,17 @@ by running the script in [`./etc/setup.sh`](./etc/setup.sh).
 
 This script also sets up the docker containers and starts the nginx proxy.
 The ec2 instance should now be serving https on port 443.
+
+### Steps
+
+1. Build + publish (locally)
+
+```bash
+./publish.sh
+```
+
+2. Setup (on EC2 server)
+
+```bash
+./run.sh
+```

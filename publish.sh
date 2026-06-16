@@ -1,6 +1,8 @@
 #!/bin/bash
 set -e
 
+git submodule update --remote
+
 # This script publishes ec2 compatible images on dockerhub,
 
 docker-compose -f docker-compose.yaml -f docker-compose.prod.yaml build
